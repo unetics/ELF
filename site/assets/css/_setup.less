@@ -1,0 +1,83 @@
+@background: #F2F2F2;
+@container-bg: #ECEAE0;
+@text:#7e7b72;
+@primary: #57A2DB;
+@secondary: #63AA9C;
+@tertiary: #4D926F;
+
+html {
+	font-size: 100%; 
+	overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%;
+	color: #7e7b72;
+}
+
+body {
+	margin: 0; 
+	padding: 0;
+	min-height: 100%; 
+	-webkit-font-smoothing: antialiased; 
+	font-smoothing: antialiased; 
+	text-rendering: optimizeLegibility;
+	color: @text;
+	background-color: @background;
+	position: relative; 
+}
+
+::-moz-selection {
+	background: @text; 
+	color: @background; 
+	text-shadow: none; 
+}
+
+::selection { 
+	background: @text; 
+	color: @background; 
+	text-shadow: none; 
+}
+
+.container{
+	padding: 20px 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img, video, canvas, object, embed {
+	max-width: 100%;
+	_width: 100%;
+}
+
+img {
+	vertical-align: middle;
+	border: 0;	
+	-ms-interpolation-mode: bicubic; /* Improve IE's resizing of images */
+}
+img.border{
+	border: 2px solid #623c17;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+

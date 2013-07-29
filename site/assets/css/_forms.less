@@ -1,0 +1,106 @@
+/* Forms */
+
+form {
+	margin: 0 1% 0 1%;
+	width: 98%;
+}
+
+fieldset {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	width: 100%;
+	margin: 7px 0;
+	border: none;
+	background: black;
+	padding: 15px 17px;
+	
+}
+
+button,input[type="text"] {
+margin: 7px 0;
+	width: 100%;
+	border: none;
+	background: black;
+	padding: 15px 17px;
+}
+
+legend {
+	margin-left: -.75em;
+}
+
+button,input,select,textarea {
+	vertical-align: baseline;
+	vertical-align: middle;
+	outline: none;
+}
+
+/* IE7 and older */
+button,input {
+	line-height: normal;
+	overflow: visible;
+}
+
+button,input[type="button"],input[type="reset"],input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	background: black;
+	border: none;
+	border-radius: 5px;
+	margin-top: 7px;
+	padding: 7px 50px;
+	color: white;
+	float: right;
+	&:hover{
+		background: #444;
+		box-shadow: none;
+	}
+}
+
+input[type="checkbox"],input[type="radio"] {
+	box-sizing: border-box;
+	 display: inline;
+	}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type=text]:focus, textarea:focus {
+/*   @include box-shadow(0 0 5px rgba(81, 203, 238, 1)); */
+  box-shadow: 0px 0px 5px @text;
+  padding: 14px 16px;
+  border: 1px solid @background;
+}
+
+::-webkit-input-placeholder {
+   color: @background;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: @background;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @background;  
+}
+
+:-ms-input-placeholder {  
+   color: @background;  
+}

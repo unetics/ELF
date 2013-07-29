@@ -1,0 +1,28 @@
+# rewrite rules
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteBase /
+
+# make panel links work
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^panel/(.*) panel/index.php [L]
+
+# make site links work
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php [L]
+ 
+</IfModule>
+
+<FilesMatch "\.(ttf|otf|eot)$">
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+# Webfonts
+AddType application/vnd.ms-fontobject eot
+AddType application/x-font-ttf ttf ttc
+AddType font/opentype otf
+AddType application/x-font-woff woff

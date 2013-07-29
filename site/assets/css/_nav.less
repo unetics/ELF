@@ -1,0 +1,49 @@
+nav {
+background: black;
+color: white;
+display: block;
+z-index: 1000;
+border-radius: 5px;
+position: relative;
+top: 60px;
+ul{
+	margin: auto;
+	text-align: left;
+	font-size: 18px;
+	&.contact-top{
+		text-align: right;
+		color: #eee;
+	}
+	li.active a{
+			color: #E92E98;
+		}
+	li{
+		display: inline-block;
+		margin: 10px ;
+
+		a{
+
+			color: white;
+			text-transform: capitalize;	
+		&.email{
+			text-transform: lowercase;
+		}
+			&:hover{
+				color: #999;
+			}
+			span{
+				padding: 3px;
+				margin: 5px;
+				color: lighten(@primary,20);
+				font-size: 80%;
+				background: darken(@primary,20);
+			}
+		}
+	}
+	}
+	@media only screen and (max-width: 768px) {
+	ul{
+		text-align: center !important;
+	}}
+	
+}
