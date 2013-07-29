@@ -1,0 +1,25 @@
+/* Quotes */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+blockquote {
+	quotes: none;
+	padding-right: 7%;
+	padding-left: 7%;
+}
+
+blockquote p:before {
+	content: '';
+}
+
+blockquote p:after {
+	content: '';
+}
+
+blockquote, cite {
+	font-style: italic;
+}
+
+
+blockquote > p {
+	padding: 0;
+}

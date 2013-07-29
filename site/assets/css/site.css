@@ -1,6 +1,8 @@
-.rslides{
-	list-style: none;
+/* This is used for site specific syles */
+
+.seporator.one{
+	background: red url(../img/bg.jpg);
 }
-.rslides img{
-	max-width: 100%;
+.seporator.two{
+	background: blue;
 }

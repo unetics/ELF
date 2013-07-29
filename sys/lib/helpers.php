@@ -6,6 +6,12 @@ function snippet($snippet, $data=array(), $return=false) {
   require($file);
 }
 
+function theme($theme, $data=array(), $return=false) {
+  $file = path('themes').$theme.'/theme.php';
+  if(!file_exists($file)) return false;
+  require($file);
+}
+
 function css($css, $return=false) {
   $file = path('css').$css.'.css';
   if(file_exists($file))   echo('<link rel="stylesheet" href="/'.$file.'" type="text/css" media="screen" />');

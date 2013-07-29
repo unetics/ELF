@@ -12,7 +12,7 @@ $GLOBALS['paths']['snippets'] = 'site/snippets'.DS;
 
 $GLOBALS['paths']['css'] = 'site/assets/css'.DS;
 
-$GLOBALS['paths']['theme'] = 'site/theme/base/css'.DS;
+$GLOBALS['paths']['themes'] = 'themes'.DS;
 
 $GLOBALS['paths']['js'] = 'site/assets/js'.DS;
 

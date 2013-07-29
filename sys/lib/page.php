@@ -41,13 +41,13 @@ class Page{
 	}
 	
 	if($active == "sitemap.xml" || $active == "sitemap"){
-		    $file = path('site') .'sitemap.php';
+		    $file = path('sys') .'sitemap.php';
 	        require($file);  
 	        return "";
 	}
 	
 	if($active == "elementree" || $active == "elementry"){
-		    $file = path('site') .'elementree.php';
+		    $file = path('sys') .'elementree.php';
 	        require($file);  
 	        return "";
 	}
