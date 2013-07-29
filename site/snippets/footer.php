@@ -5,6 +5,5 @@
 	</div>
 </div>
 	<?php js('common') ?>
-	<?php js('smooth-scroll') ?>
 	<?= notify::render(); ?>
 </footer>

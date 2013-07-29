@@ -1,1 +1,1 @@
-$(".notice .close").click(function(){$(".notice").hide()});$(window).bind("load",function(){var e=$("footer.sticky"),t=e.position(),n=$(window).height();n-=t.top;n-=e.height();n>0&&e.css({"margin-top":n+"px"})});
+function closewindow(){var e=$(this);$(this).hide();alert(e)}$(window).bind("load",function(){var e=$("footer.sticky"),t=e.position(),n=$(window).height();n-=t.top;n-=e.height();n>0&&e.css({"margin-top":n+"px"})});

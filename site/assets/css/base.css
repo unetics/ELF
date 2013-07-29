@@ -54,6 +54,8 @@ html {
   /* 1 */
 
   -webkit-text-size-adjust: 100%;
+  /* 2 */
+
   -ms-text-size-adjust: 100%;
   /* 2 */
 
@@ -795,7 +797,7 @@ nav ul.contact-top {
   color: #eee;
 }
 nav ul li.active a {
-  color: #E92E98;
+  color: #999;
 }
 nav ul li {
   display: inline-block;

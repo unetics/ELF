@@ -8,7 +8,7 @@ class notify {
         
         $messages  = "<div class='".$_SESSION['messages']['type']. " notice'>";
         $messages .= $_SESSION['messages']['message'];
-        $messages .= "<a class='close' href='#' >close</a>";
+        $messages .= "<a class='close' href='#' onclick='parent.closewindow();'>close</a>";
         $messages .= "</div>";
         
         unset($_SESSION['messages']);
