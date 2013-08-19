@@ -4,6 +4,6 @@
 		<p>&copy; <?= date("Y");?> </p>
 	</div>
 </div>
-	<?php js('common') ?>
+	<?php js('common-ck') ?>
 	<?= notify::render(); ?>
 </footer>

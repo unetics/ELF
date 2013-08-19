@@ -1,1 +1,1 @@
-function closewindow(){var e=$(this);$(this).hide();alert(e)}$(window).bind("load",function(){var e=$("footer.sticky"),t=e.position(),n=$(window).height();n-=t.top;n-=e.height();n>0&&e.css({"margin-top":n+"px"})});
+$("body").on("click",".close",function(e){e.preventDefault();$(this).parent().remove()});
